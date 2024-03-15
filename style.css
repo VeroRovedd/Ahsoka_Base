@@ -1,0 +1,130 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900 
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navBar {
+    background-color: #E681E2;
+    width: 100vw;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E681E2;
+    width: 100vw;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.headerMenu {
+    /*max-height: 100px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerImage {
+    width: 20%; 
+    height: 20%;
+    margin: 20px;
+}
+
+.profilePicture {
+    width: 20%; 
+    height: 20%;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.innerForm {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: #B79CE6;
+    border-radius: 10px;
+    align-items: center;  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  width: 80vw;
+  border-radius: 10px;
+  border-color: lightgrey;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.goalHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-height: 100px;
+}
+
+.goalInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.goalBody {
+  align-content: center;
+  border-radius: 10px;
+  background-color: lightgray;
+  width: 95%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.goalImage {
+  width: 40%; 
+  height: 40%;
+  margin: 5px;
+  border-radius: 10%;
+}
+
