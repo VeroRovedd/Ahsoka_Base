@@ -48,6 +48,7 @@ body {
 
 .headerButton {
   min-height: 70px;
+  min-width: 150px;
   border-radius: 20px;
   border: 0;
 }

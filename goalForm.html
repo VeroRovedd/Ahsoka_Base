@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahsoka Goal</title>
-    <script src="./goalForm.html"></script>
+    <script src="./goalForm.js" > </script>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,26 +22,26 @@
       </div>
       <div class="headerMenu">
         <img src="./img/menuIcon.png" alt="Menu Image" />
-        <button onclick="location.href='./index.html' ">¡Ver logros!</button>
+        <button class="headerButton" onclick="location.href='./index.html' ">¡Ver logros!</button>
         <img class="profilePicture" src="./img/avatar1.jpg" alt="Profile" />
       </div>
     </header>
     <div class="innerForm">
       <h2>Registrar Logro</h2>
       <br />
-      <form action="#" name="registerGoal">
-        <input name="goalTitle" type="text" placeholder="Título de mi logro" />
+      <form action="#" name="registerGoal" onsubmit="postClicked()">
+        <input name="goalTitle" type="text" placeholder="Título de mi logro" required/>
         <br />
         <br />
         <br />
         <label for="area">Área</label>
         <br />
-        <select name="Areas" id="area" size="1">
-          <option value="profesional">Profesional</option>
-          <option value="personal">Personal</option>
-          <option value="laboral">Laboral</option>
-          <option value="deportiva">Deportiva</option>
-          <option value="aprendizaje">Aprendizaje</option>
+        <select name="Areas" id="area" size="1" required>
+          <option value="1">Profesional</option>
+          <option value="2">Personal</option>
+          <option value="3">Laboral</option>
+          <option value="4">Deportiva</option>
+          <option value="5">Aprendizaje</option>
         </select>
         <br />
         <br />
@@ -56,6 +56,7 @@
           id="goalDescription"
           type="text"
           placeholder="Describe tu logro..."
+          required
         />
         <br />
         <br />
@@ -71,7 +72,7 @@
         <br />
         <br />
         <br />
-        <button onclick="postClicked()">Publicar</button>
+        <button type="submit">Publicar</button>
         <br />
         <br />
         <br />
