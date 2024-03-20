@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahsoka Goal</title>
+    <script src="./goalForm.html"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahsoka Goal</title>
-  <script src="./goalForm.html"></script>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-</head>
+  <body>
+    <header class="navBar">
+      <div class="headerTitle">
+        <img class="headerImage" src="./img/trophy2.png" alt="Header Trophy" />
+        <h1>AHSOKA VOICE</h1>
+      </div>
+      <div class="headerMenu">
+        <img src="./img/menuIcon.png" alt="Menu Image" />
+        <button onclick="location.href='./index.html' ">¡Ver logros!</button>
+        <img class="profilePicture" src="./img/avatar1.jpg" alt="Profile" />
+      </div>
+    </header>
+    <div class="innerForm">
+      <h2>Registrar Logro</h2>
+      <br />
+      <form action="#" name="registerGoal">
+        <input name="goalTitle" type="text" placeholder="Título de mi logro" />
+        <br />
+        <br />
+        <br />
+        <label for="area">Área</label>
+        <br />
+        <select name="Areas" id="area" size="1">
+          <option value="profesional">Profesional</option>
+          <option value="personal">Personal</option>
+          <option value="laboral">Laboral</option>
+          <option value="deportiva">Deportiva</option>
+          <option value="aprendizaje">Aprendizaje</option>
+        </select>
+        <br />
+        <br />
+        <br />
+        <label for="goalDate">Fecha del logro</label>
+        <br />
+        <input id="goalDate" type="date" />
+        <br />
+        <br />
+        <br />
+        <input
+          id="goalDescription"
+          type="text"
+          placeholder="Describe tu logro..."
+        />
+        <br />
+        <br />
+        <br />
+        <input id="goalVisibility" type="checkbox" />
+        <label for="goalVisibility">Visible</label>
+        <br />
+        <br />
+        <br />
+        <input type="image" src="" alt="Foto del logro" />
+        <input type="file" id="imageGoal" accept=".jpg, .jpeg, .png" />
 
-<body>
-  <header class="navBar">
-    <div class="headerTitle">
-      <img class="headerImage" src="./img/trophy2.png" alt="Header Trophy">
-      <h1>AHSOKA VOICE</h1>
+        <br />
+        <br />
+        <br />
+        <button onclick="postClicked()">Publicar</button>
+        <br />
+        <br />
+        <br />
+      </form>
     </div>
-    <div class="headerMenu">
-      <img src="./img/menuIcon.png" alt="Menu Image">
-      <button onclick="location.href='./index.html' "> ¡Ver logros! </button>
-      <img class="profilePicture" src="./img/avatar1.jpg" alt="Profile">
-    </div>
-  </header>
-  <div class="innerForm">
-    <h2>Registrar Logro</h2>
-    <br>
-    <form action="#" name="registerGoal">
-      <input name="goalTitle" type="text" placeholder="Título de mi logro">
-      <br> <br> <br>
-      <label for="area">Área</label>
-      <br>
-      <select name="Areas" id="area" size="1">
-        <option value="profesional">Profesional</option>
-        <option value="personal">Personal</option>
-        <option value="laboral">Laboral</option>
-        <option value="deportiva">Deportiva</option>
-        <option value="aprendizaje">Aprendizaje</option>
-      </select>
-      <br> <br> <br>
-      <label for="goalDate">Fecha del logro</label>
-      <br>
-      <input id="goalDate" type="date">
-      <br> <br> <br>
-      <input id="goalDescription" type="text" placeholder="Describe tu logro...">
-      <br> <br> <br>
-      <input id="goalVisibility" type="checkbox">
-      <label for="goalVisibility">Visible</label>
-      <br> <br> <br>
-      <input type="image" src="" alt="Foto del logro">
-      <input type="file" id="imageGoal" accept=".jpg, .jpeg, .png">
-
-
-      <br> <br> <br>
-      <button onclick="postClicked()">Publicar</button>
-      <br> <br> <br>
-    </form>
-  </div>
-</body>
-
+  </body>
 </html>
