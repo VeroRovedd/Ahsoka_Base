@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahsoka Goal</title>
+    <script src="./tagsList.js"></script>
     <script src="./goalForm.js" > </script>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +15,7 @@
     />
   </head>
 
-  <body>
+  <body onload="getTags()">
     <header class="navBar">
       <div class="headerTitle">
         <img class="headerImage" src="./img/trophy2.png" alt="Header Trophy" />
@@ -37,11 +38,11 @@
         <label for="area">Área</label>
         <br />
         <select name="Areas" id="area" size="1" required>
-          <option value="1">Profesional</option>
+          <!-- <option value="1">Profesional</option>
           <option value="2">Personal</option>
           <option value="3">Laboral</option>
           <option value="4">Deportiva</option>
-          <option value="5">Aprendizaje</option>
+          <option value="5">Aprendizaje</option>  -->
         </select>
         <br />
         <br />
