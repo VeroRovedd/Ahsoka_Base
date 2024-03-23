@@ -91,12 +91,12 @@ form {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 250px;
+  min-height: 300px;
   width: 80vw;
   border-radius: 10px;
   border-color: lightgrey;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .goalHeader {
@@ -104,13 +104,15 @@ form {
   justify-content: space-between;
   width: 95%;
   max-height: 100px;
+  margin-bottom: 10px;
 }
 
 .goalInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
   align-items: flex-end;
+  margin-left: 10px;
 }
 
 .goalBody {
@@ -134,3 +136,4 @@ form {
   font-weight: 650;
   font-style: italic;
 }
+

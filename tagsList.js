@@ -1,6 +1,5 @@
 function getTags() {
   const apiURL = "https://sfwit-c2-t2-back.onrender.com/api/v1/tags";
-  const HTML_Response = document.querySelector("#feed");
   const tagSelect = document.getElementById("area");
 
   fetch(`${apiURL}/get`)
