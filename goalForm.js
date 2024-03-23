@@ -1,3 +1,14 @@
+// TODO: Upload image
+
+const imagePreview = document.getElementById("imagePreview");
+const imageUploader = document.getElementById("imageGoal");
+
+imageUploader.addEventListener("change", (e) => {
+  console.log(e);
+  const file = e.target.files[0];
+});
+
+
 function getElements (){
     let goalTitle = document.getElementsByName("goalTitle")[0].value;
     let goalArea = document.getElementById("area").value;

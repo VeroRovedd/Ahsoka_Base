@@ -4,13 +4,14 @@ function getFormattedDate(date) {
   let month = apiDate.getMonth();
   let day = apiDate.getDate();
 
-  return `${day}/${month}/${year}`;
+  return `${day}/${month<10?"0":""}${month}/${year}`;
 }
 
 const apiURL =
   "https://achievements-app-1-0-0.onrender.com/api/v1/achievements";
 // API Test: https://jsonplaceholder.typicode.com
 const HTML_Response = document.querySelector("#feed");
+const tagNames = {1: "Profesional", 2: "Personal", 3: "Aprendizaje"};
 
 fetch(`${apiURL}/getall`)
   .then((response) => response.json())
@@ -25,7 +26,7 @@ fetch(`${apiURL}/getall`)
             <div class="goalInfo">
               <p class="goalDate">${getFormattedDate(goal.date)}</p>
               <p class="goalTitle">${goal.title}</p>
-              <p class="goalArea">${goal.id_tag}</p> 
+              <p class="goalArea">${tagNames[goal.id_tag]}</p> 
             </div>
           </div>
           <div class="goalBody">
