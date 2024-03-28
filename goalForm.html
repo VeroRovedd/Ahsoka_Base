@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahsoka Goal</title>
     <script src="./tagsList.js"></script>
-    <script src="./goalForm.js" > </script>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,20 +29,23 @@
     <div class="innerForm">
       <h2>Registrar Logro</h2>
       <br />
-      <form action="#" name="registerGoal" onsubmit="postClicked()">
-        <input name="goalTitle" type="text" placeholder="Título de mi logro" required/>
+      <form id="goalForm" action="#" name="registerGoal">
+        <label for="goalTitle">Título</label>
+        <input id="goalTitle" name="goalTitle" type="text" placeholder="Título de mi logro" required/>
+        <span id="errorTitle"></span>
         <br />
         <br />
         <br />
-        <label for="area">Área</label>
+        <label for="goalArea">Área</label>
         <br />
-        <select name="Areas" id="area" size="1" required>
+        <select name="Areas" id="goalArea" size="1" required>
           <!-- <option value="1">Profesional</option>
           <option value="2">Personal</option>
           <option value="3">Laboral</option>
           <option value="4">Deportiva</option>
           <option value="5">Aprendizaje</option>  -->
         </select>
+        <span id="errorArea"></span>
         <br />
         <br />
         <br />
@@ -53,12 +55,14 @@
         <br />
         <br />
         <br />
+        <label for="goalDescription">Descripción</label>
         <input
           id="goalDescription"
           type="text"
           placeholder="Describe tu logro..."
           required
         />
+        <span id="errorDescription"></span>
         <br />
         <br />
         <br />
@@ -68,15 +72,18 @@
         <br />
         <br />
         <img id="imagePreview" alt="Goal Image">
-        <input type="file" id="imageGoal" accept=".jpg, .jpeg, .png" />
+        <input type="file" id="imageGoal" accept=".jpg, .jpeg, .png" multiple=false/>
+        <span id="errorImage"></span>
         <br />
         <br />
         <br />
-        <button type="submit">Publicar</button>
+        <button type="submit" id="submitButton">Publicar</button>
         <br />
         <br />
         <br />
       </form>
     </div>
   </body>
+  <script src="validationForm.js"></script>
+  <script src="./goalForm.js" > </script>
 </html>
